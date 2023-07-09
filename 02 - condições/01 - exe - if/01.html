@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VamBora</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="" id="velocidade"> Km/h.
+    <br>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="resultado"></div>
+    <br>
+    <div id="multa"></div>
+
+    <script>
+        function calcular() {
+            var vel = document.getElementById('velocidade')
+            var res = document.getElementById('resultado')
+            var mul = document.getElementById('multa')
+            var vel = Number(vel.value)
+            res.innerHTML = `Sua velocidade é de ${vel} Km/h.`
+
+            if(vel>60){
+                mul.innerHTML = 'Você foi MULTADO!'
+            }
+        }
+    </script>
+</body>
+</html>

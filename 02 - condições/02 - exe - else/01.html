@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamo bora</title>
+</head>
+
+<style>
+    body{
+        background-color: rgb(34, 90, 71);
+        height: 98vh;
+        width: 98vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+        background-color: rgb(4, 177, 119);
+        padding: 0px 30px 80px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1,p,#resposta{
+        font-family: sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    #pais{
+        background-color: aquamarine;
+        margin-bottom: 10px;
+    }
+
+    #botao:hover{
+        background-color: rgb(63, 80, 64);
+        color: white;
+    }
+
+    #resposta{
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }
+</style>
+
+<body>
+    <main>
+        <h1>Aq é o BRASIL</h1>
+        <p>Qual seu país?</p>
+        <input type="text" name="" id="pais">
+        <input type="button" value="Analizar" id="botao" onclick="analizar()">
+        <div id="resposta"></div>
+    </main>
+
+    <script>
+        var pais = document.getElementById('pais')
+        var res = document.getElementById('resposta')
+        function analizar() {
+            if(pais.value == 'brasil' || pais.value == 'Brasil'){
+                res.innerHTML = `Você é BRASILEIRO!!!!!!`
+            }else{
+                res.innerHTML = 'Você não é Brasileiro!'
+            }
+        }
+    </script>
+</body>
+</html>
