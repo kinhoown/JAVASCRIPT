@@ -7,10 +7,26 @@
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
     <main>
-        <input type="number" name="" id="idade">
-        <input type="radio" name="" id="">
-        <input type="button" value="verificar">
+        <form action="" method="post">
+            <label for="idade">Ano de Nascimento: <input type="number" name="" id="idade" required placeholder="  Ex: 1998"></label>
+            <div id="sexo">
+                <p>Sexo: </p>
+                <label for="masculino"><input type="radio" name="sexo" id="masculino"> Masculino</label>
+                <label for="feminino"><input type="radio" name="sexo" id="feminino"> Feminino</label>
+            </div>
+            <input type="button" value="verificar" onclick="verificar()">
+        </form>
+        <div id="resposta"></div>
+        <div id="bola"><img id="imagem" src="" alt=""></div>
     </main>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+
+    <script src="roteiro/script.js"></script>
 </body>
 </html>
