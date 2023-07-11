@@ -1,6 +1,7 @@
 
 
 
+
 function conta() {
     var inicio = document.getElementById('inicio')
     var fim = document.getElementById('fim')
