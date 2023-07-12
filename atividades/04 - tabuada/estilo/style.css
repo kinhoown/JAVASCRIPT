@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root{
+    --letra-unica: 'Press Start 2P', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 1em;
+    font-weight: 100;
+    font-family: var(--letra-unica);
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #3bb1a7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header>h1{
+    font-size: 3em;
+    color: #02587a;
+    text-shadow: 4px 4px 0px #8fdf0e;
+    margin-bottom: 10px;
+}
+
+main{
+    background-color: #c5d869;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    width: 300px;
+    padding: 13px;
+}
+
+label{
+    text-shadow: 4px 4px 0px #5c8809;
+}
+
+#numero, #operacao{
+    width: 60px;
+    box-shadow: 4px 4px 0px #5c8809;
+    background-color: #bff0f0;
+    border: 1px solid #00000048;
+    margin-top: 10px;
+}
+
+main>input[type=button]{
+    margin-top: 15px;
+    padding: 10px;
+    box-shadow: 5px 5px 0px #5c8809;
+}
+
+main>input[type=button]:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#resultado{
+    margin-top: 30px;
+    text-shadow: 4px 4px 0px #5c8809;
+    
+}
+
+main>input[type=button], label, #numero, #operacao:hover{
+    cursor: pointer;
+}
