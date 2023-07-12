@@ -5,6 +5,8 @@ function verificar(){
     var ope = operacao.value
     var res = document.querySelector('#resultado')
 
+    res.innerHTML = `Aqui está!` + `<br> <br>`
+
     switch (ope){
         case '+':
             for(var valor = 0; valor <10; valor += 1){
