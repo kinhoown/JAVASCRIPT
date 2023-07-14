@@ -1,0 +1,12 @@
+{
+  "name": "teste",
+  "version": "1.0.0",
+  "description": "teste de estudo",
+  "main": "./07 - modulação/teste.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "erick alexandre",
+  "license": "ISC",
+  "type": "module"
+}
