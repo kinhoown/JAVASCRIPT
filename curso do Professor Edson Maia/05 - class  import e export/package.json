@@ -1,0 +1,12 @@
+{
+  "name": "teste-de-import-e-export",
+  "version": "1.0.0",
+  "description": "estou estudando import e export",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erick Alexandre",
+  "license": "ISC",
+  "type": "module"
+}
