@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(83, 70, 160);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main{
+            height: 400px;
+            width: 400px;
+            background-color: rgb(93, 207, 169);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        div{
+            font-size: 1.5em;
+            color: bisque;
+        }
+
+        input{
+            border: none;
+            border-radius: 30px;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 2em;
+            color: whitesmoke;
+            background-color: rgb(175, 96, 175);
+        }
+
+        input:hover{
+            background-color: whitesmoke;
+            color: rgb(175, 96, 175);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="div"></div>
+        <input class="aperta" type="button" value="aperta ai po!!!">
+    </main>
+
+    <script>
+        let apertaAiPo = document.querySelector('.aperta')
+        let div = document.querySelector('.div')
+
+        apertaAiPo.addEventListener('click',
+
+        function () {
+            div.innerHTML = 'pegou porra'
+        })
+    </script>
+</body>
+</html>
