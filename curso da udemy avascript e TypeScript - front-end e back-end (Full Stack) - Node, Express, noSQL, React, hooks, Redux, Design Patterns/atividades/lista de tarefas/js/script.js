@@ -1,13 +1,25 @@
 let digiteTarefa = document.querySelector('#digiteTarefa')
 let botaoAdicionar = document.querySelector('#botaoAdicionar')
 
-let tarefaConfirmada = document.querySelectorAll('.tarefaConfirmada')
-let botaoApagar = document.querySelectorAll('.botaoApagar')
+let tarefaConfirmada = document.querySelector('.tarefaConfirmada')
+let tarefaConfirmadaunica = document.querySelectorAll('.tarefaConfirmadaUnica')
+let botaoApagar = document.querySelector('.botaoApagar')
+
+function limparInput(){
+    digiteTarefa.value = ''
+    digiteTarefa.focus()
+}
 
 botaoAdicionar.addEventListener('click', function(event){
-    tarefaConfirmada[0].innerHTML += `
-    <li class="tarefaConfirmada">erick</li>
-    <button class="botaoApagar">🗑️</button>
+    tarefaConfirmada.innerHTML += `
+    <li class="tarefaConfirmadaUnica">${digiteTarefa.value}</li>
+    <button class="botaoApagar">🗑️</button><br>
     `
     event.preventDefault()
+    limparInput()
+})
+
+botaoApagar.addEventListener('click', function(event){
+    const el = event.target
+    console.log(el)
 })
