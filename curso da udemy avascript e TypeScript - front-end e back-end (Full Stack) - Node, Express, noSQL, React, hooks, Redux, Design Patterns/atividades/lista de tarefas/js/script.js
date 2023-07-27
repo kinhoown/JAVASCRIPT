@@ -12,14 +12,16 @@ function limparInput(){
 
 botaoAdicionar.addEventListener('click', function(event){
     tarefaConfirmada.innerHTML += `
-    <li class="tarefaConfirmadaUnica">${digiteTarefa.value}</li>
-    <button class="botaoApagar">🗑️</button><br>
+    <li class="tarefaConfirmadaUnica">${digiteTarefa.value}<button class="botaoApagar">🗑️</button><br></li>
     `
     event.preventDefault()
     limparInput()
 })
 
-botaoApagar.addEventListener('click', function(event){
+document.addEventListener('click', function(event){
     const el = event.target
-    console.log(el)
+
+    if (el.classList.contains('botaoApagar')){
+        el.parentElement.remove()
+    }
 })

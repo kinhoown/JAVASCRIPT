@@ -56,12 +56,20 @@ input{
 }
 
 li{
-    display: inline-block;
+    display: block;
     color: aliceblue;
     font-size: 1.2em;
-    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .botaoApagar{
     background-color: rgba(240, 248, 255, 0);
+    margin-left: 20PX;
+}
+
+.botaoApagar:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+    padding: 3px;
+    border-radius: 50%;
 }
