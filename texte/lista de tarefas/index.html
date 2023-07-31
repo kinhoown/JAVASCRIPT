@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <h1>LISTA DE TAREFAS</h1>
+
+    <label for="inputTarefa">DIGITE SUA TAREFA : <input type="text" name="" id="inputTarefa"></label>
+    <button class="botaoEnviar">ENVIAR</button>
+
+    <ul class="listaDeTarefas"></ul>
+
+
+
+    <script>
+
+        const inputTarefa = document.querySelector('#inputTarefa')
+        const botaoEnviar = document.querySelector('.botaoEnviar')
+        const listaDeTarefas = document.querySelector('.listaDeTarefas')
+
+        botaoEnviar.addEventListener('click', () => {
+            const criarLi = document.createElement('li')
+            criarLi.innerHTML = inputTarefa.value
+            listaDeTarefas.appendChild(criarLi)
+
+            const criarBotaoDelete = document.createElement('button')
+            criarBotaoDelete.className = 'criarBotaoDelete'
+            criarBotaoDelete.innerHTML = '🗑️DELETAR🗑️'
+            criarLi.appendChild(criarBotaoDelete)
+        })
+
+        document.addEventListener('click', (e) => {
+            const el = e.target
+            if (el.classList.contains('criarBotaoDelete')){
+                el.parentElement.remove()
+            }
+        })
+
+    </script>
+</body>
+</html>

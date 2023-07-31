@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+*{
+    margin: 0PX;
+    padding: 0PX;
+    border: 0PX;
+    font-family: sans-serif;
+}
+
+:root{
+    --roxo: #42124c;
+    --rosa: #fe0472;
+    --verde: #8aff00;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--roxo);
+}
+
+main{
+    background-color: var(--rosa);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+table{
+    width: 100vb;
+}
+
+div{
+    margin-bottom: 20px;
+}
+
+td{
+    margin: 10px;
+}
