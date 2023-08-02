@@ -30,16 +30,32 @@ main{
 
 h1{
     margin-bottom: 20px;
+    text-align: center;
 }
 
 table{
-    width: 100vb;
+    margin: auto;
 }
 
-div{
+.resposta{
+    height: 20px;
+    padding: 10px;
     margin-bottom: 20px;
+    background-color: #00000052;
+    color: white;
+    text-align: end;
+    font-size: 1.5em;
+    border-radius: 10px;
 }
 
 td{
-    margin: 10px;
+    border: 2px solid black;
+    padding: 10px 25px;
+    background-color: var(--verde);
+    border-radius: 10px;
+}
+
+td:hover{
+    border-radius: 100%;
+    color: white;
 }
