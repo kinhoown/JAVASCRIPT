@@ -13,32 +13,32 @@
             <div class="resposta"></div>
             <tbody>
                 <tr>
-                    <td class="operadores">+</td>
-                    <td class="operadores">-</td>
-                    <td class="operadores">×</td>
-                    <td class="operadores">÷</td>
+                    <td onclick="pegarNumero('+')" class="operadores">+</td>
+                    <td onclick="pegarNumero('-')" class="operadores">-</td>
+                    <td onclick="pegarNumero('×')" class="operadores">×</td>
+                    <td onclick="pegarNumero('÷')" class="operadores">÷</td>
                 </tr>
                 <tr>
-                    <td class="numeros">9</td>
-                    <td class="numeros">8</td>
-                    <td class="numeros">7</td>
+                    <td onclick="pegarNumero(9)" class="numeros">9</td>
+                    <td onclick="pegarNumero(8)" class="numeros">8</td>
+                    <td onclick="pegarNumero(7)" class="numeros">7</td>
                     <td class="limpar">Ⅽ</td>
                 </tr>
                 <tr>
-                    <td class="numeros">6</td>
-                    <td class="numeros">5</td>
-                    <td class="numeros">4</td>
+                    <td onclick="pegarNumero(6)" class="numeros">6</td>
+                    <td onclick="pegarNumero(5)" class="numeros">5</td>
+                    <td onclick="pegarNumero(4)" class="numeros">4</td>
                     <td class="apagar">⫸</td>
                 </tr>
                 <tr>
-                    <td class="numeros">3</td>
-                    <td class="numeros">2</td>
-                    <td class="numeros">1</td>
-                    <td class="resutado" rowspan="2">=</td>
+                    <td onclick="pegarNumero(3)" class="numeros">3</td>
+                    <td onclick="pegarNumero(2)" class="numeros">2</td>
+                    <td onclick="pegarNumero(1)" class="numeros">1</td>
+                    <td onclick="imprimir()" class="resutado" rowspan="2">=</td>
                 </tr>
                 <tr>
                     <td class="ponto">.</td>
-                    <td class="numeros">0</td>
+                    <td onclick="pegarNumero(0)" class="numeros">0</td>
                     <td class="virgula">,</td>
                 </tr>
             </tbody>

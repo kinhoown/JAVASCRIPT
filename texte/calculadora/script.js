@@ -1,7 +1,16 @@
-const resposta = document.querySelector('.resposta')
-const numeros = document.querySelectorAll('.numeros>div')
+const numeros = document.querySelectorAll('.numeros')
 
 
-numeros[0].addEventListener('click', () => {
-    console.log(numeros[0])
-})
+function imprimir() {
+    const resposta = document.querySelector('.resposta').innerHTML += pegarNumero()
+    console.log(pegarNumero())
+
+}
+
+function pegarNumero(num = num) {
+    //const resposta = document.querySelector('.resposta').innerHTML += num
+    return num
+}
+
+
+
