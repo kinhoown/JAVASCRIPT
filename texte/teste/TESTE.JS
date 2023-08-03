@@ -1,5 +1,9 @@
-let res = document.querySelector('.res')
+function pegarNumero(n1 = 1, n2 = 1) {
+    return n1 + n2
+}
 
-const criarH1 = document.createElement('h1')
-criarH1.innerHTML = 'vamo boraaa!!!'
-res.appendChild(criarH1)
+function imprimir() {
+    console.log(pegarNumero())
+}
+
+imprimir()
