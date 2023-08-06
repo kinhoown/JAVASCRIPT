@@ -9,40 +9,33 @@
 <body>
     <main>
         <h1>CALCULADORA</h1>
-        <table>
             <div class="resposta"></div>
-            <tbody>
-                <tr>
-                    <td onclick="pegarNumero('+')" class="operadores">+</td>
-                    <td onclick="pegarNumero('-')" class="operadores">-</td>
-                    <td onclick="pegarNumero('×')" class="operadores">×</td>
-                    <td onclick="pegarNumero('÷')" class="operadores">÷</td>
-                </tr>
-                <tr>
-                    <td onclick="pegarNumero(9)" class="numeros">9</td>
-                    <td onclick="pegarNumero(8)" class="numeros">8</td>
-                    <td onclick="pegarNumero(7)" class="numeros">7</td>
-                    <td class="limpar">Ⅽ</td>
-                </tr>
-                <tr>
-                    <td onclick="pegarNumero(6)" class="numeros">6</td>
-                    <td onclick="pegarNumero(5)" class="numeros">5</td>
-                    <td onclick="pegarNumero(4)" class="numeros">4</td>
-                    <td class="apagar">⫸</td>
-                </tr>
-                <tr>
-                    <td onclick="pegarNumero(3)" class="numeros">3</td>
-                    <td onclick="pegarNumero(2)" class="numeros">2</td>
-                    <td onclick="pegarNumero(1)" class="numeros">1</td>
-                    <td onclick="imprimir()" class="resutado" rowspan="2">=</td>
-                </tr>
-                <tr>
-                    <td class="ponto">.</td>
-                    <td onclick="pegarNumero(0)" class="numeros">0</td>
-                    <td class="virgula">,</td>
-                </tr>
-            </tbody>
-        </table>
+
+            <button class="operadores" value="+">+</button>
+            <button class="operadores" value="-">-</button>
+            <button class="operadores" value="×">×</button>
+            <button class="operadores" value="÷">÷</button>
+            
+            <button class="numeros" value="9">9</button>
+            <button class="numeros" value="8">8</button>
+            <button class="numeros" value="7">7</button>
+            <button class="limpar" value="Ⅽ">Ⅽ</button>
+            
+            <button class="numeros" value="6">6</button>
+            <button class="numeros" value="5">5</button>
+            <button class="numeros" value="4">4</button>
+            <button class="apagar" value="⫸">⫸</button>
+        
+        
+            <button class="numeros" value="3">3</button>
+            <button class="numeros" value="2">2</button>
+            <button class="numeros" value="1">1</button>
+            <button class="resultado" value="=">=</button>
+            
+            <button class="ponto" value=".">.</button>
+            <button class="numeros" value="0">0</button>
+            <button class="virgula" value=",">,</button>
+        
     </main>
 
     <script src="script.js"></script>

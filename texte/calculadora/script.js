@@ -1,16 +1,23 @@
-const numeros = document.querySelectorAll('.numeros')
+let cont = 0
+document.addEventListener('click', (e) => {
+    const res = document.querySelector('.resposta')
+    const el = e.target
 
+    console.log(cont)
+    if (el.classList.contains('numeros')){
+        console.log(cont)
+        cont += el.value
+        res.innerHTML += el.value
+        console.log(Number(cont))
+    }else if (el.classList.contains('operadores')){
 
-function imprimir() {
-    const resposta = document.querySelector('.resposta').innerHTML += pegarNumero()
-    console.log(pegarNumero())
+    }else if (el.classList.contains('limpar')){
 
-}
+    }else if (el.classList.contains('apagar')){
 
-function pegarNumero(num = num) {
-    //const resposta = document.querySelector('.resposta').innerHTML += num
-    return num
-}
+    }else if (el.classList.contains('resultado')){
 
+    }else if (el.classList.contains('virgula')){
 
-
+    }
+})

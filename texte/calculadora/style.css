@@ -33,10 +33,6 @@ h1{
     text-align: center;
 }
 
-table{
-    margin: auto;
-}
-
 .resposta{
     height: 20px;
     padding: 10px;
@@ -48,14 +44,14 @@ table{
     border-radius: 10px;
 }
 
-td{
+button{
     border: 2px solid black;
     padding: 10px 25px;
     background-color: var(--verde);
     border-radius: 10px;
 }
 
-td:hover{
+button:hover{
     border-radius: 100%;
     color: white;
 }
